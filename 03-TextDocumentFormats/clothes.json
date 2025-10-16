@@ -54,4 +54,25 @@
             "Accessories"
         ]
     }
-{       "name" : "" 
+    
+     {
+    "name": "Puma",
+    "founded": 1948,
+    "headquarters": "Herzogenaurach, Germany",
+    "employees": 20400,
+    "products": [
+      "Sportswear",
+      "Footwear",
+      "Accessories"
+    ]
+  },
+  {
+    "name": "Gucci",
+    "founded": 1921,
+    "headquarters": "Florence, Italy",
+    "employees": 18000,
+    "products": [
+      "Luxury Clothing",
+      "Footwear",
+      "Accessories"
+    ]   ]
