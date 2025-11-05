@@ -16,3 +16,14 @@ select {
   margin-bottom: 10px;
   
 }
+button[type="submit"],
+input[type="submit"] {
+  background-color: #007bff; /* Kolor tła (np. niebieski) */
+  color: white; /* Kolor tekstu (np. biały) */
+  border: none; /* Usuwa domyślną ramkę */
+  padding: 10px 20px; /* Wewnętrzny margines */
+  border-radius: 5px; /* Zaokrąglenie rogów */
+  cursor: pointer; /* Zmienia kursor na wskaźnik */
+  font-size: 16px; /* Rozmiar czcionki */
+  transition: background-color 0.3s ease; /* Dodaje płynność dla efektu hover */
+}
