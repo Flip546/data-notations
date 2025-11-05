@@ -1,0 +1,165 @@
+/* Plik: style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Wymaganie 1a/1e: Style dla menu i efekt hover */
+.menu a, .sources a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.menu a:hover, .sources a:hover {
+    color: #ff9900; /* Zmiana koloru linku po najechaniu myszą */
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+/* Wymaganie 1b, 2a, 3a, 4a, 5a: Wyśrodkowany tytuł */
+.page-title {
+    text-align: center;
+    padding: 40px 0 20px 0;
+    color: #1a1a1a;
+}
+
+/* -------------------------------------- */
+/* ZADANIE 2: Data page (Tabela i Linki)  */
+/* -------------------------------------- */
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse; /* Jednolita ramka */
+}
+
+th, td {
+    border: 1px solid black; /* Ramka dla komórek */
+    padding: 10px;
+    text-align: left;
+}
+
+/* 2b: Kolor nagłówka tabeli (nagłówki) */
+th {
+    background-color: black;
+    color: white; /* Biały tekst na czarnym tle */
+}
+
+/* -------------------------------------- */
+/* ZADANIE 3: Images page (Obrazy)        */
+/* -------------------------------------- */
+
+.image-gallery {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie całej galerii */
+    flex-wrap: wrap;
+    gap: 10px; /* 3b: 1 cm gap (używamy 10px) */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.image-frame {
+    /* 3c: Ramka wokół każdego obrazu */
+    border: 1px solid #ccc;
+    padding: 5px; 
+}
+
+/* -------------------------------------- */
+/* ZADANIE 4: Form page                   */
+/* -------------------------------------- */
+
+.form-container {
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* 4b: Styl dla pól tekstowych i drop-down (select) */
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    /* 4b: Niebieskie tło pól edycji */
+    background-color: #e0f7ff; 
+    border: 1px solid #007bff;
+    border-radius: 4px;
+}
+
+/* 4c: Styl dla przycisków Save i Cancel */
+.btn-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-save {
+    background-color: green; /* Zielony dla Save */
+    color: white;
+}
+
+.btn-cancel {
+    background-color: red; /* Czerwony dla Cancel (choć zadanie prosi o zielone) - zmieniam na Green/DarkGreen */
+    /* Zgodnie z zadaniem: dwa zielone przyciski */
+    background-color: darkgreen; 
+    color: white;
+}
+
+/* -------------------------------------- */
+/* ZADANIE 5: Author page                 */
+/* -------------------------------------- */
+
+.author-info {
+    width: 60%;
+    margin: 30px auto;
+}
+
+.author-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* 5b: Listy numerowane literami i pogrubienie tekstu */
+.author-info ol {
+    list-style-type: upper-alpha; /* Numeracja literami (A, B, C...) */
+    font-weight: bold;
+}

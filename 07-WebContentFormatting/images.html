@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrazy - Moja Witryna</title>
+    <link rel="stylesheet" href="style.css"> <style>
+        /* Styl lokalny: ustala jednakowy rozmiar obrazów */
+        .image-gallery img {
+            width: 150px;  /* Stała szerokość */
+            height: 100px; /* Stała wysokość */
+            object-fit: cover; /* Upewnia się, że obraz wypełnia ramkę bez deformacji */
+            display: block; /* Usuwa marginesy pod obrazem */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="data.html">Dane</a>
+            <a href="images.html">Obrazy</a>
+            <a href="form.html">Formularz</a>
+            <a href="author.html">Autor</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">🖼️ Galeria Słynnych Obrazów</h1>
+
+        <div class="image-gallery">
+            
+            <a href="https://pl.wikipedia.org/wiki/Mona_Lisa" target="_blank" class="image-frame">
+                <img src="mona_lisa.jpg" alt="Mona Lisa" title="Mona Lisa - Leonardo da Vinci">
+            </a>
+
+            <a href="https://pl.wikipedia.org/wiki/Poca%C5%82unek_(obraz_Klimta)" target="_blank" class="image-frame">
+                <img src="kiss.jpg" alt="Pocałunek" title="Pocałunek - Gustav Klimt">
+            </a>
+
+            <a href="https://pl.wikipedia.org/wiki/Gwia%C5%BAdzista_noc" target="_blank" class="image-frame">
+                <img src="starry_night.jpg" alt="Gwiaździsta noc" title="Gwiaździsta noc - Van Gogh">
+            </a>
+
+            <a href="https://pl.wikipedia.org/wiki/Krzyk_(obraz_Muncha)" target="_blank" class="image-frame">
+                <img src="scream.jpg" alt="Krzyk" title="Krzyk - Edvard Munch">
+            </a>
+
+            <a href="https://pl.wikipedia.org/wiki/Ostatnia_wieczerza_(obraz_Leonarda_da_Vinci)" target="_blank" class="image-frame">
+                <img src="last_supper.jpg" alt="Ostatnia Wieczerza" title="Ostatnia Wieczerza - da Vinci">
+            </a>
+            
+        </div>
+    </main>
+</body>
+</html>

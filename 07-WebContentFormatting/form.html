@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz - Moja Witryna</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="data.html">Dane</a>
+            <a href="images.html">Obrazy</a>
+            <a href="form.html">Formularz</a>
+            <a href="author.html">Autor</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">📝 Formularz Kontaktowy</h1>
+
+        <div class="form-container">
+            <form action="#" method="POST">
+                
+                <div class="form-row">
+                    <label for="name">Imię i Nazwisko (np. Jan Kowalski):</label>
+                    <input type="text" id="name" name="user_name" required>
+                </div>
+                
+                <div class="form-row">
+                    <label for="email">Adres E-mail (np. jan@example.com):</label>
+                    <input type="text" id="email" name="user_email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="topic">Wybierz Temat Zapytania (np. Współpraca):</label>
+                    <select id="topic" name="user_topic" required>
+                        <option value="">-- Wybierz opcję --</option>
+                        <option value="wspolpraca">Współpraca</option>
+                        <option value="pytanie">Pytanie ogólne</option>
+                        <option value="problem">Zgłoszenie problemu</option>
+                    </select>
+                </div>
+
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-save">Zapisz (Save)</button>
+                    <button type="reset" class="btn btn-cancel">Anuluj (Cancel)</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nazwa": "Laptop",
+    "cena": 3500.00,
+    "dostępny": true
+  },
+  {
+    "id": 2,
+    "nazwa": "Telefon",
+    "cena": 1200.00,
+    "dostępny": true
+  },
+  {
+    "id": 3,
+    "nazwa": "Tablet",
+    "cena": 900.00,
+    "dostępny": false
+  },
+  {
+    "id": 4,
+    "nazwa": "Słuchawki",
+    "cena": 250.00,
+    "dostępny": true
+  }
+]

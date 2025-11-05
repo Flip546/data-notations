@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<magazyn>
+    <produkt id="P001">
+        <nazwa>Monitor LED</nazwa>
+        <ilosc>15</ilosc>
+        <cena>899.99</cena>
+    </produkt>
+    <produkt id="P002">
+        <nazwa>Kamera internetowa</nazwa>
+        <ilosc>40</ilosc>
+        <cena>150.00</cena>
+    </produkt>
+</magazyn>

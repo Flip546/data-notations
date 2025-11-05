@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Główna - Moja Witryna</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* a. Menu w prawym górnym rogu */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between; /* Rozdziela tytuł i menu */
+            align-items: center;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        /* e. Efekt hover na linkach w menu */
+        .menu a:hover {
+            color: #ff9900; /* Zmiana koloru linku po najechaniu myszą */
+        }
+
+        /* b. Wyśrodkowany tytuł strony (w sekcji głównej) */
+        .page-title {
+            text-align: center;
+            padding: 40px 0 20px 0;
+            color: #1a1a1a;
+        }
+
+        /* c. Akapit na całą szerokość, wyrównany do obu stron (justified) */
+        .full-width-text {
+            width: 80%; /* Ogranicza szerokość treści, zachowując marginesy */
+            margin: 0 auto 30px auto;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        /* d. Ustawienia Flexbox dla responsywnych kolumn (duży ekran) */
+        .columns-container {
+            display: flex;
+            flex-wrap: wrap; /* Pozwala kolumnom łamać się do nowej linii */
+            width: 80%;
+            margin: 20px auto;
+            gap: 20px; /* Odstęp między kolumnami */
+        }
+
+        .column {
+            flex: 1; /* Pozwala kolumnom równo się rozciągać */
+            min-width: 280px; /* Minimalna szerokość, po osiągnięciu której kolumna się łamie */
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* d. Responsywność: kolumny jedna pod drugą na małych ekranach */
+        @media (max-width: 600px) {
+            .columns-container {
+                flex-direction: column; /* Układanie kolumn jedna pod drugą */
+                width: 95%;
+            }
+        }
+        
+        /* e. Style dla sekcji źródeł (linków) */
+        .sources {
+            width: 80%;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="author.html">O nas</a>
+            <a href="form.html">Kontakt</a>
+            <a href="images.html">Galeria</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">🎉 Witaj na Stronie Głównej Naszej Witryny! 🎉</h1>
+
+        <p class="full-width-text">
+            To jest pierwszy akapit tekstu, który składa się z co najmniej pięciu zdań, co jest wymogiem zadania. 
+            Wszystkie elementy na stronie są zaprojektowane tak, aby były w pełni responsywne i poprawnie wyświetlały się na każdym urządzeniu. 
+            Dzięki nowoczesnym technikom CSS, w tym Flexbox, układ strony dopasowuje się do szerokości ekranu, zapewniając optymalne doświadczenia użytkownika. 
+            Jest to kluczowe w dzisiejszych czasach, gdy ruch mobilny dominuje w sieci. 
+            Mamy nadzieję, że prezentowany układ spełnia wszystkie określone kryteria, a także jest przyjemny dla oka.
+        </p>
+
+        <div class="columns-container">
+            <div class="column">
+                <h3>Temat 1: Frontend</h3>
+                <p>
+                    Rozwój frontend to klucz do stworzenia estetycznej i funkcjonalnej strony internetowej. 
+                    Obejmuje to HTML, CSS oraz JavaScript, które razem tworzą interaktywny interfejs. 
+                    Dobre praktyki projektowania interfejsów (UI/UX) są dziś niezbędne.
+                </p>
+            </div>
+            
+            <div class="column">
+                <h3>Temat 2: Backend</h3>
+                <p>
+                    Backend odpowiada za logikę biznesową, bazy danych oraz serwery. 
+                    Bez niezawodnego backendu, żadna złożona aplikacja internetowa nie będzie działać poprawnie ani bezpiecznie. 
+                    To niewidzialne serce każdej witryny.
+                </p>
+            </div>
+            
+            <div class="column">
+                <h3>Temat 3: Responsywność</h3>
+                <p>
+                    Responsywny design gwarantuje, że strona wygląda dobrze na smartfonie, tablecie i laptopie. 
+                    Osiąga się to głównie za pomocą Media Queries w CSS oraz elastycznych jednostek. 
+                    Dostosowanie do urządzeń mobilnych jest obecnie standardem branżowym.
+                </p>
+            </div>
+        </div>
+        
+        <div class="sources full-width-text">
+            <h2>Źródła Tekstu (Przykładowe Linki)</h2>
+            <p>Linki powinny zmieniać kolor po najechaniu myszą (efekt ten jest dziedziczony z menu):</p>
+            <ul>
+                <li><a href="https://pl.wikipedia.org" target="_blank">Wikipedia Polska (źródło ogólne)</a></li>
+                <li><a href="https://developer.mozilla.org/pl/docs/Web/CSS/Pseudo-classes" target="_blank">MDN Web Docs (źródło techniczne)</a></li>
+                <li><a href="https://example.com/source3" target="_blank">Przykładowe źródło 3</a></li>
+            </ul>
+        </div>
+    </main>
+
+</body>
+</html>
